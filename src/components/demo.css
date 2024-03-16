@@ -1,0 +1,98 @@
+/* demo2.css */
+.demo2-svg {
+    width: 300px; 
+    height: 340px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+:root {
+    --top-color: #F26522;
+    --left-color: #5B57A6;
+    --right-color: #009384;
+    --bottom-color: #EEA616;
+}
+
+.demo2-top {
+    fill: var(--top-color);
+}
+
+.demo2-left {
+    fill: var(--left-color);
+}
+
+.demo2-right {
+    fill: var(--right-color);
+}
+
+.demo2-bottom {
+    fill: var(--bottom-color);
+}
+
+.demo2-top,
+.demo2-left,
+.demo2-right,
+.demo2-bottom {
+    fill-opacity: 0.5;
+}
+
+.demo2-top {
+    animation: popInOutTop 4s infinite;
+}
+
+.demo2-right {
+    animation: popInOutRight 4s infinite;
+}
+
+.demo2-bottom {
+    animation: popInOutBottom 4s infinite;
+}
+
+.demo2-left {
+    animation: popInOutLeft 4s infinite;
+}
+
+@keyframes popInOutTop {
+    0% {
+        fill-opacity: 0.5;
+    }
+    16.66% {
+        fill-opacity: 1;
+    }
+    33.33%, 100% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes popInOutRight {
+    0%, 33.33% {
+        fill-opacity: 0.5;
+    }
+    49.99% {
+        fill-opacity: 1;
+    }
+    66.66%, 100% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes popInOutBottom {
+    0%, 66.66% {
+        fill-opacity: 0.5;
+    }
+    83.32% {
+        fill-opacity: 1;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes popInOutLeft {
+    0%, 83.33% {
+        fill-opacity: 0.5;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
